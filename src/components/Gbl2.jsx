@@ -1,0 +1,158 @@
+import { createGlobalStyle } from "styled-components";
+
+const Gbl2 = createGlobalStyle`
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+.sendmail {
+  margin-top: 20%;
+  background-color: transparent;
+  border: none;
+  animation: ms 1.5s ease-out 0s 1, op 1.5s linear 0s 1;
+}
+@keyframes ms {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 10%;
+  }
+}
+
+@keyframes op {
+  0% {
+    opacity: 0;
+  }
+}
+
+
+body {
+  overflow: hidden;
+  background-color: #000;
+}
+
+
+.grid-container {
+  --grid: 10rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  perspective: 100rem;
+  animation: rotate 100s linear infinite forwards;
+
+  .plane {
+    --dir: 1;
+    width: 300%;
+    height: 150%;
+    min-height: 70rem;
+    position: absolute;
+    bottom: 0;
+    transform-style: preserve-3d;
+    transform-origin: bottom center;
+    transform: translateX(-50%) rotateX(85deg);
+
+    &:last-child {
+      --dir: -1;
+      top: 0;
+      transform-origin: top center;
+      transform: translateX(-50%) rotateX(-85deg);
+
+      &>* {
+        &::after {
+          background-image: linear-gradient(to top, rgba(0, 0, 0, 255) var(--grid), rgba(0, 0, 0, 0));
+        }
+      }
+    }
+
+    &>* {
+      transform-style: preserve-3d;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      &::before {
+        background-image: repeating-linear-gradient(to left, red, red 4px, transparent 4px, transparent var(--grid)),
+          repeating-linear-gradient(to bottom, red, red 4px, transparent 4px, transparent var(--grid));
+        animation: move 1s linear infinite forwards;
+      }
+
+      &::after {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 255) var(--grid), rgba(0, 0, 0, 0));
+        z-index: 1;
+        transform: translateZ(1px);
+      }
+    }
+
+    .glow {
+      filter: blur(1rem);
+      z-index: 1;
+      mix-blend-mode: plus-lighter;
+    }
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(calc(var(--grid) * var(--dir)));
+  }
+}
+
+@keyframes blink {
+  0% {
+    visibility: visible;
+  }
+
+  50% {
+    visibility: visible;
+  }
+
+  51% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+
+.h1regi {
+  color: red;
+  font-family: 'Share Tech Mono', 'Cascadia Code', Menlo, Monaco, 'Courier New', monospace;
+  font-size: 2rem;
+  filter: drop-shadow(0px 0px 5px currentColor);
+  position: relative;
+  top: -175px;
+  left: 555px;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: .2em;
+    height: .7em;
+    background-color: currentColor;
+    margin-left: .1em;
+    animation: blink 1s linear infinite forwards;
+    vertical-align: baseline;
+  }
+}
+`;
+
+export default Gbl2;
