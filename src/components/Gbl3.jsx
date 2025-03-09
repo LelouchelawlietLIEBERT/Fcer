@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
-const Gbl3 = createGlobalStyle`:root {
+const Gbl3 = createGlobalStyle`
+:root {
   --white: white;
   --red: #e31b23;
   --bodyColor: black;
@@ -110,11 +111,11 @@ body {
 }
 
 .my-form *:required {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg");
 }
 
 .my-form select {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg);
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg");
 }
 
 .my-form *:disabled {
@@ -123,7 +124,7 @@ body {
 }
 .my-form .required-msg {
   display: none;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg) no-repeat center left / 15px 15px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg") no-repeat center left / 15px 15px;
   padding-left: 20px;
 }
 
