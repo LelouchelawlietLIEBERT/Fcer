@@ -1,5 +1,4 @@
 import Mailform from "./Mailform";
-import Gbl3 from "./Gbl3";
 
 const Sendmail = () => {
   return (
