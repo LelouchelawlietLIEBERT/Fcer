@@ -41,7 +41,8 @@ const Sendmail = () => {
                   />
                   <label htmlFor="terms">
                     I have read and agreed with {"  "}
-                    <a href="">the terms and conditions.</a>
+                    <a onClick={() => {
+      alert("No Bitches Allowed!!!");}}>the terms and conditions.</a>
                   </label>
                 </li>
                 <li>
