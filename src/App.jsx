@@ -10,6 +10,7 @@ import Gbl4 from "./components/Gbl4";
 import Register from "./components/Register";
 import Message from "./components/Message";
 import Gbl5 from "./components/Gbl5";
+import Gbl3 from "./components/Gbl3";
 
 function App() {
   const toggleSlide = (x) => {
@@ -82,6 +83,7 @@ function App() {
     ) : click === "regi" ? (
       <>
         <Gbl2 />
+        <Gbl3 />
         <Sendmail />
       </>
     ) : click === "club" ? (
