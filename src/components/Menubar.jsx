@@ -62,10 +62,7 @@ const Menubar = ({ setClick }) => {
             </b>
             <b style={{ textTransform: "uppercase" }}>
               t
-              <a href="javascript:void(0);" title="Go To Shop">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                </svg>
+              <a href="javascript:void(0);" title="Smtg">
               </a>
             </b>
             <b style={{ textTransform: "uppercase" }}>
@@ -85,10 +82,7 @@ const Menubar = ({ setClick }) => {
             </b>
             <b style={{ textTransform: "uppercase" }}>
               o
-              <a href="javascript:void(0);" title="Facebook">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                </svg>
+              <a href="javascript:void(0);" title="Smtg">
               </a>
             </b>
             <b style={{ textTransform: "uppercase" }}>
