@@ -45,8 +45,7 @@ function App() {
               <button
                 className="toggle-btn"
                 id="toggleBtn1"
-                style={{ position: "relative", top: "28em", left: "-43px" }}
-                onClick={() => {
+                             onClick={() => {
                   toggleSlide("down");
                 }}
               >
