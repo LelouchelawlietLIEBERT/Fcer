@@ -93,7 +93,8 @@ canvas {
   background: transparent;
   position: absolute;
   top: 35%;
-  left: 35%;
+  left: 50%;
+  transform: translateX(-50%);
   color: #ffffff;
   font-size: 0.8em;
   text-align: center;
